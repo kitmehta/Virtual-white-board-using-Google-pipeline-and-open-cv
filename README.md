@@ -1,7 +1,4 @@
-# Virtual-white-board-using-Google-pipeline-and-open-cv
-Fully automated whiteboard animation Using Python, Computer Vision and Google MediaPipe Libraries
-## Demo 
-[![Virtual Whiteboard](https://res.cloudinary.com/marcomontalbano/image/upload/v1620299484/video_to_markdown/images/youtube--vF5HnA5sO6c-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/vF5HnA5sO6c "Virtual Whiteboard")
+
 <h1 align="center"> Virtual drawing board ✍️</h1>
 
 <h2 align="center">
@@ -18,19 +15,18 @@ Fully automated whiteboard animation Using Python, Computer Vision and Google Me
 </h2>
 
 ### Drawing on a virtual canvas using hand pose estimation
-
-
 </br>
 <h3 align="center">
 
-![](imgs/demo.gif)
+<img width="940" alt="HelloWorld" src="https://user-images.githubusercontent.com/52587652/159973319-07778b94-0ce6-4f7d-b67e-95ee02c595ad.png">
+
 
 </h3>
 </br>
 <hr>
 
-
 ### Install Required Packages and Libraries
+
 ```
 pip upgrade --user pip
 pip install opencv-python
@@ -38,29 +34,24 @@ pip install numpy
 pip install mediapipe
 ```
 
+
 ### Run Project
 Open project from PyCharm or suitable IDE and run the VirtualPainter.py file or Open Command Prompt and Run `python VirtualPainter.py`
 
-## Guide
-![guide-img](./guide.png)
-
-
-
-
-To test the whiteboard, run `Virtualpainter.py`.
-
 - Clenching a fist with your index finger sticking out allows you to **draw**.
 
-<img src ="imgs/draw.png" width="260px" />
+<img width="260" alt="draw" src="https://user-images.githubusercontent.com/52587652/159974040-551f0dfb-fc6b-47ee-bebf-f74e258fcdfd.png">
+
 
 - Closing your hand into a fist allows you to **erase**, where the red box represents the bounds of the eraser.
 
-<img src ="imgs/erase.png" width="260px" />
+<img width="282" alt="erase" src="https://user-images.githubusercontent.com/52587652/159974089-7a5ab08b-87d4-432c-bbb3-bd97aa4ef225.png">
+
 
 - Holding your hand with all of your fingers open does nothing.
 
-<img src ="imgs/none.png" width="260px" />
-<hr>
+<img width="354" alt="none" src="https://user-images.githubusercontent.com/52587652/159974139-4ff1ea69-a455-45a2-bdaa-5f52636757bd.png">
+
 
 ## References
 
