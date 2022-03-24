@@ -1,26 +1,73 @@
 # Virtual-white-board-using-Google-pipeline-and-open-cv
 Fully automated whiteboard animation Using Python, Computer Vision and Google MediaPipe Libraries
-python
+## Demo 
+[![Virtual Whiteboard](https://res.cloudinary.com/marcomontalbano/image/upload/v1620299484/video_to_markdown/images/youtube--vF5HnA5sO6c-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/vF5HnA5sO6c "Virtual Whiteboard")
+<h1 align="center"> Virtual drawing board ✍️</h1>
 
-PyTorch OpenCV MediaPipe license
+<h2 align="center">
 
-Install Required Packages and Libraries
+
+![python](https://forthebadge.com/images/badges/made-with-python.svg)
+
+
+[![PyTorch](https://img.shields.io/badge/-PyTorch-white?style=flat-square&logo=PyTorch)](https://pytorch.org/)
+[![OpenCV](https://img.shields.io/badge/-OpenCV-blueviolet?style=flat-square&logo=OpenCV)](https://opencv.org/)
+[![MediaPipe](https://img.shields.io/badge/-MediaPipe-white?style=flat-square&logo=Clyp)](https://mediapipe.dev/)
+[![license](https://img.shields.io/github/license/gursi26/virtual_drawing_board.svg?style=flat-square)](https://github.com/gursi26/virtual_drawing_board/blob/main/LICENSE)
+
+</h2>
+
+### Drawing on a virtual canvas using hand pose estimation
+
+
+</br>
+<h3 align="center">
+
+![](imgs/demo.gif)
+
+</h3>
+</br>
+<hr>
+
+
+### Install Required Packages and Libraries
+```
 pip upgrade --user pip
 pip install opencv-python
 pip install numpy
 pip install mediapipe
+```
 
-Virtual drawing board ✍️
-The Virtual WhiteBoard is a project I made using the OpenCV and Mediapipe Python libraries. Ever wanted to draw your imagination by just waiving your finger in air. In this project I have  build an Air Canvas which can draw anything on it by just capturing the motion of a coloured marker with camera. Here a coloured object at tip of finger is used as the marker.
+### Run Project
+Open project from PyCharm or suitable IDE and run the VirtualPainter.py file or Open Command Prompt and Run `python VirtualPainter.py`
 
-We will be using the computer vision techniques of OpenCV to build this project. The preffered language is python due to its exhaustive libraries and easy to use syntax but understanding the basics it can be implemented in any OpenCV supported language.
+## Guide
+![guide-img](./guide.png)
 
-Here Colour Detection and tracking is used in order to achieve the objective. The colour marker in detected and a mask is produced. It includes the further steps of morphological operations on the mask produced which are Erosion and Dilation. Erosion reduces the impurities present in the mask and dilation further restores the eroded main mask.
 
 
-Run Project
-Open project from PyCharm or suitable IDE and run the VirtualPainter.py file or Open Command Prompt and Run python VirtualPainter.py
-<img width="940" alt="HelloWorld" src="https://user-images.githubusercontent.com/52587652/159913976-d8e60a14-d445-46b2-89ce-cb032122a764.png">
-![sample_project_img1](https://user-images.githubusercontent.com/52587652/159914247-947fd943-81a1-4a3d-8ef5-09ea006943f9.png)
 
+To test the whiteboard, run `Virtualpainter.py`.
+
+- Clenching a fist with your index finger sticking out allows you to **draw**.
+
+<img src ="imgs/draw.png" width="260px" />
+
+- Closing your hand into a fist allows you to **erase**, where the red box represents the bounds of the eraser.
+
+<img src ="imgs/erase.png" width="260px" />
+
+- Holding your hand with all of your fingers open does nothing.
+
+<img src ="imgs/none.png" width="260px" />
+<hr>
+
+## References
+
+- [Mediapipe repository](https://github.com/google/mediapipe.git)
+
+<h3 align="right">
+
+
+</h3>
 
